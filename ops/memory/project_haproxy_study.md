@@ -8,7 +8,7 @@ HAProxy 전체 학습 문서 프로젝트. /Users/sunny/Desktop/haproxy-practice
 
 **Why:** AL2023 환경에서 HAProxy 설치, 설정 구조, 로드밸런싱, 헬스체크, ACL, SSL/TLS, 모니터링, 고가용성, Runtime API까지 실무 운영 수준으로 학습하기 위한 목적.
 
-**How to apply:** 이 프로젝트에서 작업할 때 AL2023 환경과 HAProxy 운영 학습 목적을 전제로 설명하고, 새 내용 추가 시 기존 `docs/` 문서 구조와 한국어 deep-dive 톤을 유지한다.
+**How to apply:** 이 프로젝트에서 작업할 때 AL2023 환경과 HAProxy 운영 학습 목적을 전제로 설명하고, 새 내용 추가 시 기존 `docs/guides/` 문서 구조와 한국어 deep-dive 톤을 유지한다.
 
 생성된 문서 목록 (01~21번):
 01_installation_AL2023.md, 02_config_structure.md, 03_global_section.md,
