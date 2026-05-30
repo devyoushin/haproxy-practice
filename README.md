@@ -29,54 +29,46 @@ C로 작성되어 있으며, 단일 프로세스에서 수만 개의 동시 연�
 | 3.0 | LTS | 최신 장기 지원 버전 |
 | 3.1 | Stable | 최신 안정 버전 |
 
-## 학습 순서
+## 문서 목록
 
-1. [AL2023 설치 가이드](01_installation_AL2023.md)
-2. [설정 파일 구조](02_config_structure.md)
-3. [global 섹션](03_global_section.md)
-4. [defaults 섹션](04_defaults_section.md)
-5. [frontend 섹션](05_frontend_section.md)
-6. [backend 섹션](06_backend_section.md)
-7. [listen 섹션](07_listen_section.md)
-8. [로드밸런싱 알고리즘](08_load_balancing_algorithms.md)
-9. [헬스체크](09_health_checks.md)
-10. [ACL (접근 제어 목록)](10_ACL.md)
-11. [SSL/TLS 설정](11_SSL_TLS.md)
-12. [로깅](12_logging.md)
-13. [통계 및 모니터링](13_stats_monitoring.md)
-14. [Stick Tables & 세션 지속성](14_stick_tables_sessions.md)
-15. [보안 설정](15_security.md)
-16. [성능 튜닝](16_performance_tuning.md)
-17. [고가용성 (HA)](17_high_availability.md)
-18. [Lua 스크립팅](18_lua_scripting.md)
-19. [Runtime API](19_runtime_api.md)
-20. [실전 예제](20_practical_examples.md)
-21. [트러블슈팅](21_troubleshooting.md)
+| 파일 | 내용 |
+|------|------|
+| [01_installation_AL2023.md](docs/01_installation_AL2023.md) | AL2023 HAProxy RPM 설치 가이드 |
+| [02_config_structure.md](docs/02_config_structure.md) | 설정 파일 구조, 섹션 구성, 검증 방법 |
+| [03_global_section.md](docs/03_global_section.md) | global 섹션 핵심 지시어 |
+| [04_defaults_section.md](docs/04_defaults_section.md) | defaults 섹션 공통 정책 |
+| [05_frontend_section.md](docs/05_frontend_section.md) | frontend 섹션, bind, ACL 연결 |
+| [06_backend_section.md](docs/06_backend_section.md) | backend 섹션, server, option 구성 |
+| [07_listen_section.md](docs/07_listen_section.md) | listen 섹션 사용 방식 |
+| [08_load_balancing_algorithms.md](docs/08_load_balancing_algorithms.md) | 로드밸런싱 알고리즘 |
+| [09_health_checks.md](docs/09_health_checks.md) | 헬스체크 설정과 운영 패턴 |
+| [10_ACL.md](docs/10_ACL.md) | ACL 조건식과 라우팅 |
+| [11_SSL_TLS.md](docs/11_SSL_TLS.md) | SSL/TLS 종료, 인증서, 보안 설정 |
+| [12_logging.md](docs/12_logging.md) | 로깅 형식과 분석 |
+| [13_stats_monitoring.md](docs/13_stats_monitoring.md) | 통계 페이지와 모니터링 |
+| [14_stick_tables_sessions.md](docs/14_stick_tables_sessions.md) | Stick Table과 세션 지속성 |
+| [15_security.md](docs/15_security.md) | 보안 설정과 방어 패턴 |
+| [16_performance_tuning.md](docs/16_performance_tuning.md) | 성능 튜닝 |
+| [17_high_availability.md](docs/17_high_availability.md) | 고가용성 구성 |
+| [18_lua_scripting.md](docs/18_lua_scripting.md) | Lua 스크립팅 |
+| [19_runtime_api.md](docs/19_runtime_api.md) | Runtime API와 소켓 운영 |
+| [20_practical_examples.md](docs/20_practical_examples.md) | 실전 예제 |
+| [21_troubleshooting.md](docs/21_troubleshooting.md) | 트러블슈팅 |
 
 ## 파일 구조
 
 ```
 haproxy-practice/
-├── README.md                        # 이 파일 (인덱스)
-├── 01_installation_AL2023.md        # AL2023 RPM 설치 가이드
-├── 02_config_structure.md           # 설정 파일 구조
-├── 03_global_section.md             # global 섹션
-├── 04_defaults_section.md           # defaults 섹션
-├── 05_frontend_section.md           # frontend 섹션
-├── 06_backend_section.md            # backend 섹션
-├── 07_listen_section.md             # listen 섹션
-├── 08_load_balancing_algorithms.md  # 로드밸런싱 알고리즘
-├── 09_health_checks.md              # 헬스체크
-├── 10_ACL.md                        # ACL (접근 제어 목록)
-├── 11_SSL_TLS.md                    # SSL/TLS 설정
-├── 12_logging.md                    # 로깅
-├── 13_stats_monitoring.md           # 통계 및 모니터링
-├── 14_stick_tables_sessions.md      # Stick Tables & 세션
-├── 15_security.md                   # 보안 설정
-├── 16_performance_tuning.md         # 성능 튜닝
-├── 17_high_availability.md          # 고가용성 (HA)
-├── 18_lua_scripting.md              # Lua 스크립팅
-├── 19_runtime_api.md                # Runtime API
-├── 20_practical_examples.md         # 실전 예제
-└── 21_troubleshooting.md            # 트러블슈팅
+├── README.md              # 프로젝트 소개 및 문서 인덱스
+├── CLAUDE.md              # AI 작업 지침
+├── docs/                  # 학습 문서
+│   ├── 01_installation_AL2023.md
+│   ├── 02_config_structure.md
+│   ├── ...
+│   └── 21_troubleshooting.md
+├── memory/                # AI가 참고할 프로젝트 메모리
+│   ├── MEMORY.md
+│   └── project_haproxy_study.md
+└── tools/                 # 실습용 설정 예시와 보조 자료
+    └── sample_haproxy.cfg
 ```

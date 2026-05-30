@@ -1,0 +1,1 @@
+- [haproxy-practice project](project_haproxy_study.md) — AL2023 환경 HAProxy deep-dive 학습 프로젝트, 21개 문서 정리
