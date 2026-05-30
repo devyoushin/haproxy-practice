@@ -9,7 +9,15 @@ Amazon Linux 2023 환경 기준의 HAProxy 완전 분석 문서 모음입니다.
 ├── README.md          # 프로젝트 소개 및 문서 목록
 ├── CLAUDE.md          # 이 파일
 ├── docs/
-│   └── guides/        # 학습 문서 (01~21번)
+│   ├── README.md      # 문서 구조 안내
+│   ├── install/       # 설치
+│   ├── config/        # 설정
+│   ├── routing/       # 라우팅
+│   ├── load-balancing/ # 로드밸런싱
+│   ├── security/      # 보안
+│   ├── performance/   # 성능
+│   ├── operations/    # 운영
+│   └── extensibility/ # 확장
 └── ops/
     ├── memory/        # AI 작업용 프로젝트 메모리
     └── tools/         # 실습용 설정 예시와 보조 자료
@@ -18,7 +26,7 @@ Amazon Linux 2023 환경 기준의 HAProxy 완전 분석 문서 모음입니다.
 ## 문서 규칙
 
 - 문서 파일명은 `{번호}_{주제}.md` 형식을 유지한다.
-- 모든 학습 문서는 `docs/guides/` 디렉토리에 위치한다.
+- 모든 학습 문서는 `docs/` 디렉토리에 위치한다.
 - 한국어로 작성한다.
 - AL2023 환경에서 HAProxy를 설치하고 운영한다는 전제를 유지한다.
 - 새 문서를 추가할 때는 `README.md` 문서 목록과 `ops/memory/project_haproxy_study.md`를 함께 갱신한다.
