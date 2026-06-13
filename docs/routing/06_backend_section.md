@@ -150,7 +150,7 @@ backend web
     # balance first      # 첫 번째 서버 우선
 ```
 
-상세 내용은 [로드밸런싱 알고리즘 문서](08_load_balancing_algorithms.md) 참고.
+상세 내용은 [로드밸런싱 알고리즘 문서](../load-balancing/08_load_balancing_algorithms.md) 참고.
 
 ---
 
@@ -315,7 +315,7 @@ backend web
     server web2 192.168.1.11:80 check
 ```
 
-상세 내용은 [스틱테이블 문서](14_stick_tables_sessions.md) 참고.
+상세 내용은 [스틱테이블 문서](../load-balancing/14_stick_tables_sessions.md) 참고.
 
 ---
 

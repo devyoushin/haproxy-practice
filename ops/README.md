@@ -4,6 +4,7 @@ HAProxy 운영 보조 자료를 두는 공간입니다.
 
 | 폴더 | 내용 |
 |------|------|
+| `bulk-install/` | 여러 서버에 HAProxy를 설치하기 위한 inventory와 실행 스크립트 |
 | `memory/` | 프로젝트 메모리와 학습 진행 기록 |
 | `tools/` | HAProxy 설정 예시와 보조 자료 |
 
