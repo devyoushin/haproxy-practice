@@ -5,7 +5,7 @@ HAProxy를 설치하고 운영하기 위한 개인 학습 공간입니다.
 ## 어디서 시작할까
 
 - 문서 지도: `docs/README.md`
-- 첫 문서: `docs/install/01_installation_AL2023.md`
+- 첫 문서: `docs/01-installation/01_installation_AL2023.md`
 - 운영 보조 자료: `ops/README.md`
 - AI 작업 지침: `CLAUDE.md`
 
